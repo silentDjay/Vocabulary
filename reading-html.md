@@ -2,7 +2,7 @@
 
 Referred to as the `root element`, all other html elements must live within this one. The last element of an HTML document must close out this tag with </html>.
 
-Syntax: <html>[your entire page]</html>
+Syntax: `<html>[your entire page]</html>`
 
 * _parents_: none
 * _content_: _only_ [`<head>`](#head) and [`<body>`](#body)
@@ -19,7 +19,7 @@ Syntax: <html>[your entire page]</html>
 
 A generic page division that should typically only be used if no other, more semantic choice is appropriate.
 
-Syntax: <div class="divClass"></div>
+Syntax: `<div class="divClass"></div>`
 
 * _parents_: anything that accepts [Flow Content][1]
 * _content_: any [Flow Content][1]
@@ -37,7 +37,7 @@ Syntax: <div class="divClass"></div>
 
 This is an HTML comment. Anything inside the bracket will appear in the code but will not show up (or impact in any way) the content of the rendered HTML. It is used to make code more human-readable and less inscrutable.
 
-Syntax: <!--THIS IS A USEFUL COMMENT-->
+Syntax: `<!--THIS IS A USEFUL COMMENT-->`
 
 * _parents_: A comment can live outside of or within any html tag
 * _content_: any text
@@ -51,7 +51,7 @@ Syntax: <!--THIS IS A USEFUL COMMENT-->
 
 This must be the very first element of an HTML file. It tells the web browser, or whatever is rendering your HTML, what kind (version) of HTML this file contains, and accordingly what kind of HTML the browser should look for. This is a declaration, not a tag, as in it _declares_ the document's type.
 
-Syntax: <!DOCTYPE html>
+Syntax: `<!DOCTYPE html>`
 
 * _parents_: none
 * _content_: only [`<html>`](#html)
@@ -67,7 +67,7 @@ Syntax: <!DOCTYPE html>
 
 One of the very first tags in every HTML file. The contents of the head do not display on the page when rendered.  Within the <head>, you will usually find a [`<link>`](#link) to a CSS stylesheet, as well as to any remotely hosted fonts, icon repositories, or CSS reset tools. It can also contain a declaration of what character set is used within the html document.
 
-Syntax: <head></head>
+Syntax: `<head></head>`
 
 * _parents_: [`<html>`](#html)
 * _content_: <link>(s)
@@ -83,7 +83,7 @@ Syntax: <head></head>
 
 This section of the HTML document contains the content that will be rendered in the browser or other application and styled by the associated CSS file. It must be the second element of an html document, after [`<html>`](#html). There can be only one <body> tag within an html document.
 
-Syntax: <body></body>
+Syntax: `<body>[your page's entire content]</body>`
 
 * _parents_: <html>, <mask>
 * _content_: any [Flow Content][1]
@@ -99,7 +99,7 @@ Syntax: <body></body>
 
 Stands for 'anchor', and is used to house a link embedded within the contents of the page. This is one of the most common inline element tags.
 
-Syntax: <a href="[link redirect destination]">[displayContent]</a>
+Syntax: `<a href="[link redirect destination]">[displayContent]</a>`
 
 * _parents_: anything that accepts [Flow Content][1], which is apparently a lot of things.
 * _content_: any [Flow Content][1], palpable content (WTF?)
@@ -116,8 +116,8 @@ Syntax: <a href="[link redirect destination]">[displayContent]</a>
 
 Stands for 'paragraph'; automatically starts on a new line and the following element starts on a new line.
 
-Syntax: <p>This is the first paragraph of text. This is the first paragraph of text.
-  This is the first paragraph of text. This is the first paragraph of text.</p>
+Syntax: `<p>This is the first paragraph of text. This is the first paragraph of text.
+  This is the first paragraph of text. This is the first paragraph of text.</p>`
 
 * _parents_: anything that accepts [Flow Content][1]
 * _content_: any [Flow ][1], palpable content (WTF?)
@@ -133,7 +133,7 @@ Syntax: <p>This is the first paragraph of text. This is the first paragraph of t
 
 Used for incorporating images into your HTML.
 
-syntax: <img class="Trangle" src="[filepath]" alt="Description of image contents">
+syntax: `<img class="Trangle" src="[filepath]" alt="Description of image contents">`
 
 * _parents_: anything that accepts [Flow Content][1]
 * _content_:  none, other than a path to an image file
@@ -153,7 +153,7 @@ syntax: <img class="Trangle" src="[filepath]" alt="Description of image contents
 
 A generic tag which typically envelops a text element within other elements/tags/etc.
 
-Syntax: <p><span>[text]</span></p>
+Syntax: `<p><span>[text]</span></p>`
 
 * _parents_: anything that accepts [Flow Content][1] or [Phrasing Content][4]
 * _content_: any [Phrasing Content][4]
