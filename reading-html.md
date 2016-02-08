@@ -2,6 +2,8 @@
 
 Referred to as the `root element`, all other html elements must live within this one. The last element of an HTML document must close out this tag with </html>.
 
+Syntax: <html></html>
+
 * _parents_: none
 * _content_: _only_ [`<head>`](#head) and [`<body>`](#body)
 * _display_: none - only the elements within the `<body>` tag display.
@@ -16,6 +18,8 @@ Referred to as the `root element`, all other html elements must live within this
 ## `<div>`
 
 A generic page division that should typically only be used if no other, more semantic choice is appropriate.
+
+Syntax: <div class="divClass"></div>
 
 * _parents_: anything that accepts [Flow Content][1]
 * _content_: any [Flow Content][1]
@@ -32,6 +36,8 @@ A generic page division that should typically only be used if no other, more sem
 ## `<!-- -->`
 
 This is an HTML comment. Anything inside the bracket will appear in the code but will not show up (or impact in any way) the content of the rendered HTML. It is used to make code more human-readable and less inscrutable.
+
+Syntax: <!--THIS IS A USEFUL COMMENT-->
 
 * _parents_: A comment can live outside of or within any html tag
 * _content_: any text
@@ -61,6 +67,8 @@ Syntax: <!DOCTYPE html>
 
 One of the very first tags in every HTML file. The contents of the head do not display on the page when rendered.  Within the <head>, you will usually find a [`<link>`](#link) to a CSS stylesheet, as well as to any remotely hosted fonts, icon repositories, or CSS reset tools. It can also contain a declaration of what character set is used within the html document.
 
+Syntax: <head></head>
+
 * _parents_: [`<html>`](#html)
 * _content_: <link>(s)
 * _display_: Nothing within this tag displays on the page.
@@ -74,6 +82,8 @@ One of the very first tags in every HTML file. The contents of the head do not d
 ## `<body>`
 
 This section of the HTML document contains the content that will be rendered in the browser or other application and styled by the associated CSS file. It must be the second element of an html document, after [`<html>`](#html). There can be only one <body> tag within an html document.
+
+Syntax: <body></body>
 
 * _parents_: <html>, <mask>
 * _content_: any [Flow Content][1]
@@ -89,6 +99,8 @@ This section of the HTML document contains the content that will be rendered in 
 
 Stands for 'anchor', and typically houses a link. This is one of the most common inline element tags.
 
+Syntax: <a href="[link redirect destination]">[displayContent]</a>
+
 * _parents_: anything that accepts [Flow Content][1], which is apparently a lot of things.
 * _content_: any [Flow Content][1], palpable content (WTF?)
 * _display_: `inline`
@@ -96,6 +108,7 @@ Stands for 'anchor', and typically houses a link. This is one of the most common
 ### Attributes
 
 * `class` -- a space-separated list of category names
+* `href` -- 
 * . . .
 
 . . .
@@ -103,6 +116,8 @@ Stands for 'anchor', and typically houses a link. This is one of the most common
 ## `<p>`
 
 Stands for 'paragraph'; automatically starts on a new line and the following element starts on a new line.
+
+Syntax: 
 
 * _parents_: anything that accepts [Flow Content][1], which is apparently a lot of things.
 * _content_: any [Flow ][1], palpable content (WTF?)
@@ -136,6 +151,8 @@ syntax: <img class="Trangle" src="[filepath]" alt="Description of image contents
 ## `<span>`
 
 A tag which can envelop a text element within other elements/tags/etc.
+
+Syntax: 
 
 * _parents_: anything that accepts [Flow Content][1], which is apparently a lot of things.
 * _content_: any [Flow Content][1], palpable content (WTF?)
