@@ -2,7 +2,7 @@
 
 Referred to as the `root element`, all other html elements must live within this one. The last element of an HTML document must close out this tag with </html>.
 
-Syntax: <html></html>
+Syntax: <html>[your entire page]</html>
 
 * _parents_: none
 * _content_: _only_ [`<head>`](#head) and [`<body>`](#body)
@@ -136,31 +136,32 @@ Used for incorporating images into your HTML.
 syntax: <img class="Trangle" src="[filepath]" alt="Description of image contents">
 
 * _parents_: anything that accepts [Flow Content][1]
-* _content_:  
-* _display_: `block`
+* _content_:  none, other than a path to an image file
+* _display_: `inline-block`
 
 ### Attributes
 
 * `class` -- a space-separated list of category names
-* `src` -- path to local (or remotely hosted) image file to display with tag
-* `alt` -- _alternate_ text to image. Concisely describes contents of image; typically displays upon hover over image.
+* `src` -- path to local (or remotely hosted) image file to display with tag. This is a **mandatory** property for <img> tags.
+* `alt` -- _alternate_ text to image. Concisely describes contents of image; typically displays upon hover over image. Also **mandatory**
+* `vertical-align` -- specifies the vertical alignment of an inline or table-cell box.
+* a lot more
 
 . . .
 
 ## `<span>`
 
-A tag which can envelop a text element within other elements/tags/etc.
+A generic tag which typically envelops a text element within other elements/tags/etc.
 
-Syntax: 
+Syntax: <p><span>[text]</span></p>
 
-* _parents_: anything that accepts [Flow Content][1], which is apparently a lot of things.
-* _content_: any [Flow Content][1], palpable content (WTF?)
+* _parents_: anything that accepts [Flow Content][1] or [Phrasing Content][4]
+* _content_: any [Phrasing Content][4]
 * _display_: `inline`
 
 ### Attributes
 
-* `class` -- a space-separated list of category names
-* . . .
+* All [global attributes][2]
 
 . . .
 
@@ -169,3 +170,4 @@ Syntax:
 [1](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content)
 [2](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 [3](https://en.wikipedia.org/wiki/HTML_element)
+[4](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Phrasing_content)
