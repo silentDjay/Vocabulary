@@ -97,7 +97,7 @@ Syntax: <body></body>
 
 ## `<a>`
 
-Stands for 'anchor', and typically houses a link. This is one of the most common inline element tags.
+Stands for 'anchor', and is used to house a link embedded within the contents of the page. This is one of the most common inline element tags.
 
 Syntax: <a href="[link redirect destination]">[displayContent]</a>
 
@@ -108,8 +108,7 @@ Syntax: <a href="[link redirect destination]">[displayContent]</a>
 ### Attributes
 
 * `class` -- a space-separated list of category names
-* `href` -- 
-* . . .
+* `href` -- 'hypertext reference' - defines the location where the link should redirect the user if they click on it
 
 . . .
 
@@ -117,16 +116,16 @@ Syntax: <a href="[link redirect destination]">[displayContent]</a>
 
 Stands for 'paragraph'; automatically starts on a new line and the following element starts on a new line.
 
-Syntax: 
+Syntax: <p>This is the first paragraph of text. This is the first paragraph of text.
+  This is the first paragraph of text. This is the first paragraph of text.</p>
 
-* _parents_: anything that accepts [Flow Content][1], which is apparently a lot of things.
+* _parents_: anything that accepts [Flow Content][1]
 * _content_: any [Flow ][1], palpable content (WTF?)
 * _display_: `block`
 
 ### Attributes
 
-* `class` -- a space-separated list of category names
-* . . .
+* a lot of them, including all [global attributes][2]
 
 . . .
 
@@ -169,3 +168,4 @@ Syntax:
 
 [1](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content)
 [2](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+[3](https://en.wikipedia.org/wiki/HTML_element)
